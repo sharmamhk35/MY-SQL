@@ -1,0 +1,127 @@
+🎵 Spotify Database Management System
+📘 Introduction
+
+The Spotify Database Management System is a comprehensive relational database project that models the real-world functionality of Spotify — a leading global music streaming platform.
+This project aims to design, build, and manage an optimized SQL database that efficiently handles user information, songs, artists, albums, playlists, podcasts, advertisements, and subscription services.
+
+It demonstrates strong data relationships, normalization, integrity constraints, and real-world applicability through SQL queries and use cases.
+
+🧩 Project Overview
+
+The system captures and manages key Spotify operations such as:
+
+User account creation and subscription management
+
+Artist and album organization
+
+Track and playlist storage with genre categorization
+
+Podcast and episode tracking
+
+Concert ticket management
+
+Advertisement management with ad plays and sponsors
+
+User reviews, followers, libraries, and payment handling
+
+This database helps simulate how Spotify manages millions of users, tracks, and ads seamlessly within a relational framework.
+
+🏗️ Database Design
+Database Name: SpotifyDB
+
+The database is fully normalized and ensures data integrity through:
+
+PRIMARY KEY, FOREIGN KEY, NOT NULL, UNIQUE, CHECK, and DEFAULT constraints
+
+Logical table connections
+
+Normalized structure to eliminate redundancy
+
+
+| Category                  | Tables                                                                                                  |
+| ------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **Users & Accounts**      | `users`, `user_followers`, `user_library`, `devices`, `subscriptions`, `subscription_plans`, `payments` |
+| **Music Management**      | `artists`, `artist_members`, `albums`, `album_artists`, `tracks`, `track_genres`, `genres`              |
+| **Playlists & Listening** | `playlists`, `playlist_tracks`, `listening_history`, `reviews`                                          |
+| **Podcasts**              | `podcasts`, `podcast_episodes`, `episode_hosts`                                                         |
+| **Concerts & Tickets**    | `concerts`, `tickets`                                                                                   |
+| **Advertisements**        | `advertisers`, `ad_plays`                                                                               |
+
+
+🗂️ Entity Relationship (ER) Diagram
+
+The ER Diagram illustrates relationships between all major entities such as Users, Artists, Albums, Tracks, Playlists, Subscriptions, Payments, and Advertisers.
+(Include your ER diagram image here once created, e.g., ![ER Diagram](ERD_SpotifyDB.png))
+
+💾 SQL Features Implemented
+
+The project demonstrates all key SQL operations:
+
+1️⃣ Database & Table Queries (DDL)
+
+CREATE DATABASE, CREATE TABLE, ALTER TABLE, DROP TABLE, TRUNCATE TABLE
+
+2️⃣ Data Manipulation (DML)
+
+INSERT INTO, UPDATE, DELETE
+
+3️⃣ Data Query Language (DQL)
+
+SELECT, JOIN, GROUP BY, ORDER BY, WHERE, HAVING, LIMIT
+
+Advanced queries for insights such as:
+
+Most streamed artist
+
+Top playlists by followers
+
+Average subscription revenue per plan
+
+Ad play frequency per advertiser
+
+Total concert ticket sales per event
+
+📊 Analysis
+
+The database enables analysis and reporting such as:
+
+Tracking user engagement and listening history
+
+Analyzing ad performance and campaign revenue
+
+Managing artist contributions and concert ticketing
+
+Studying subscription trends and user retention
+
+Providing meaningful insights for marketing and content recommendations
+
+🧠 Reflection
+Challenges Faced
+
+Designing 25 interconnected tables while maintaining normalization
+
+Establishing consistent foreign key relationships between multiple modules
+
+Creating meaningful, logically connected sample data for all tables
+
+Maintaining data accuracy while implementing constraints
+
+Solutions Implemented
+
+Used normalization (up to 3NF) to eliminate redundancy
+
+Applied strong data validation using CHECK, UNIQUE, and FOREIGN KEY constraints
+
+Used realistic data insertion for better testing and demonstration
+
+Ensured modular structure for scalability (e.g., new podcast or ad tables can be added easily)
+
+📂 Phase-1/
+ ┣ 📄 ProjectPhase1_MahakSharma_Spotify.sql      # All CREATE + INSERT SQL scripts
+ ┣ 📄 README.md                                  # Project documentation
+ ┗ 📸 Screenshots/                               # Query outputs and ER diagram images
+
+
+✅ Conclusion
+
+This Spotify Database Project provides a realistic simulation of a large-scale music streaming platform using SQL. It reflects efficient database design, strong relationships, and analytical potential — ideal for learning, portfolio showcasing, or academic evaluation.
